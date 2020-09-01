@@ -1,0 +1,99 @@
+@font-face {
+  font-family: nexa-bold;
+  src: url("nexa_ssv/Nexa Bold.otf");
+}
+@font-face {
+  font-family: nexa-heavy;
+  src: url("nexa_ssv/Nexa Heavy.otf");
+}
+@font-face {
+  font-family: nexa;
+  src: url("nexa_ssv/Nexa Light.otf");
+}
+@font-face {
+  font-family: nexa-regular;
+  src: url("nexa_ssv/Nexa Regular.otf");
+}
+@font-face {
+  font-family: nexa-book;
+  src: url("nexa_ssv/Nexa Book Italic.otf");
+}
+
+
+html,
+body {
+  height: 100%;
+  font-family: nexa;
+}
+
+h1,h2,h3,h4,h5,h6{ 
+  font-family: nexa-heavy;
+}
+.social a:hover{
+  text-decoration: none;
+}
+.bg{
+  background-color: #eff3f7;
+}
+
+.bg-black{
+  background-color: #000;
+}
+
+.bg-primary-2{
+  background-color: #0f76d5;
+}
+
+.text-primary-2{
+  color: #0f76d5;
+}
+
+.text-black{
+  color: #000;
+}
+
+.border-rounded{
+  border-radius: 3px;
+}
+
+.main-center{
+  position: relative;
+  top: 75px;
+}
+
+.m-t-5{
+  margin-top: -5px
+}
+
+.text-danger-light{
+  color: #e2053d;
+}
+.bg-danger-light{
+  color: #e2053d;
+}
+
+.nav-item .nav-link{
+  font-family: nexa-regular
+}
+
+
+.wizard span{
+  margin-left: 25px
+}
+
+.title-label{
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.form-group{
+  margin-top: 5px;
+}
+
+.icons img, .links a{
+  margin-right: 15px;
+}
+
+.account:hover{
+  text-decoration: none;
+}
