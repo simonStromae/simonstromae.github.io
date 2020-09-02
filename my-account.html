@@ -48,9 +48,15 @@
       </ul>
       </div>
       <form class="form-inline ml-3 mr-3">
-        <a href="my-account.html" class="account mx-4 text-sm font-weight-bold">
-          <img class="rounded-circle img-fluid" src="brand/avatars/default.jpg" width="25"> Simon.S
-        </a>
+        <div class="dropdown">
+          <a href="#" class="account mx-4 text-sm font-weight-bold" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img class="rounded-circle" src="brand/avatars/default.jpg" width="25" height="25"> Simon.S
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="my-account.html">Mon compte</a>
+            <a class="dropdown-item" href="index.html">Deconnexion</a>
+          </div>
+        </div>
         <a href="tracking.html" class="shadow-sm rounded-0 btn btn-md btn-danger ml-2 text-sm"><i class="fas fa-search"></i> Rechercher</a>
       </form>
     </div>
@@ -74,11 +80,40 @@
             <a class="nav-link rounded-0" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Mon besoin</a>
           </li>
         </ul>
+
         <div class="tab-content" id="pills-tabContent">
+
+          <!-- Mon Profil -->
           <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
             <div class="card shadow-sm rounded-0 bg-light">
               <div class="card-body">
                 <!--<h5 class="mb-3">Profil</h5>-->
+
+                <!--Personal Information -->
+                <div class="mt-5">
+                  <h6 class="">Avatar</h6><hr>
+
+                  <div class="row">
+                    <p class="col-md-4 col-sm-12" style="font-size: 12px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="col-md-8 col-sm-12">
+                      <div class="mb-2">
+                        <img class="rounded-circle" src="brand/avatars/default.jpg" width="175" height="175">
+                      </div>
+                      <form>
+                        <div class="row">
+                          <div class="col-sm-12 col-md-9 form-group">
+                            <input class="form-control-file rounded-0" type="file">
+                          </div>
+                          <div class="col-sm-12 col-md-3 form-group">
+                            <button class="btn btn-dark rounded-0">Modifier</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
 
                 <!--Personal Information -->
                 <div class="mt-5">
@@ -116,7 +151,7 @@
                         </div>
 
                         <div class="form-group">
-                          <button class="btn btn-primary rounded-0">Sauvegarder</button>
+                          <button class="btn btn-dark rounded-0">Sauvegarder</button>
                         </div>
                       </form>
                     </div>
@@ -140,7 +175,7 @@
                         </div>
 
                         <div class="form-group">
-                          <button class="btn btn-primary rounded-0">Enregistrer</button>
+                          <button class="btn btn-dark rounded-0">Enregistrer</button>
                         </div>
                       </form>
                     </div>
@@ -149,6 +184,8 @@
               </div>
             </div>
           </div>
+
+          <!-- Adresse Livraison -->
           <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
             <div class="card shadow-sm rounded-0 bg-light">
               <div class="card-body">
@@ -189,7 +226,7 @@
                         </div>
 
                         <div class="form-group">
-                          <button class="btn btn-primary rounded-0">Sauvegarder</button>
+                          <button class="btn btn-dark rounded-0">Enregistrer</button>
                         </div>
                       </form>
                     </div>
@@ -220,7 +257,7 @@
                         </div>
 
                         <div class="form-group">
-                          <button class="btn btn-primary rounded-0">Enregistrer</button>
+                          <button class="btn btn-dark rounded-0">Enregistrer</button>
                         </div>
                       </form>
                     </div>
@@ -229,6 +266,8 @@
               </div>
             </div>
           </div>
+
+          <!-- Mon Besoin -->
           <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
             <div class="card shadow-sm rounded-0 bg-light">
               <div class="card-body">
