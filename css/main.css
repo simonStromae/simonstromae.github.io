@@ -1,3 +1,29 @@
+/* *********************************************
+[Master Stylesheet]
+
+Template Name: MOVeTrack Template
+Template Simon Stromae
+Version: 1.0.0
+Last Update: Sept 03, 2020
+
+*********************************************
+  [Color Codes]
+
+  $heading: #232323; [Heading Color]
+  $text: #666666; [Text Color]
+  $bg-gray: #f4f4f4; [Gray Background]
+  $primary: #f55656; [Primary Color]
+  $white: #ffffff; [White Color]
+  $dark: #000000; [Dark Color]
+  $border: #ebebeb; [Border Color]
+  $hover: #f55656; [Hover Color]
+  $secondary: #a6a6a6; [Secondary Color]
+
+  ---------------------------------------------
+  [Font Family: 'Nexa']
+--------------------------------------------- */
+
+/* Import Fonts & All CSS */
 @font-face {
   font-family: nexa-bold;
   src: url("nexa_ssv/Nexa Bold.otf");
@@ -19,9 +45,13 @@
   src: url("nexa_ssv/Nexa Book Italic.otf");
 }
 
+/* :: 1.0 Reboot CSS */
+* {
+  margin: 0;
+  padding: 0; 
+}
 
-html,
-body {
+html, body {
   height: 100%;
   font-family: nexa;
 }
@@ -29,9 +59,20 @@ body {
 h1,h2,h3,h4,h5,h6{ 
   font-family: nexa-heavy;
 }
-.social a:hover{
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #e2053d;
   text-decoration: none;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+  outline: none; }
+
+.navbar-nav .active {
+  color: #e2053d;
+  border-bottom: 2px solid #e2053d;
 }
+
 .bg{
   background-color: #eff3f7;
 }
@@ -100,4 +141,8 @@ h1,h2,h3,h4,h5,h6{
 
 .text-carousel{
   top: 400px
+}
+
+.social a:hover{
+  text-decoration: none;
 }

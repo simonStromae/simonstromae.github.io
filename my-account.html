@@ -20,7 +20,7 @@
         
     </style>
 </head>
-<body class="">
+<body class="d-flex flex-column h-100">
   <div class="d-none d-sm-block bg-black p-2 text-center text-white" style="font-family: nexa-book">
       <span>" Une Equipe de professionels pour vous offrir le service de vos rêves "</span>  
   </div>
@@ -30,10 +30,10 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse " id="navbarSupportedContent">
-      <div class="ml-auto">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="ml-auto mr-5">
       <ul class="navbar-nav mr-auto ">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="index.html">Accueil</a>
         </li>
         <li class="nav-item">
@@ -47,17 +47,17 @@
         </li>
       </ul>
       </div>
-      <form class="form-inline ml-3 mr-3">
+      <form class="form-inline align-item-center d-flex justify-content-center">
         <div class="dropdown">
-          <a href="#" class="account mx-4 text-sm font-weight-bold" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <img class="rounded-circle" src="brand/avatars/default.jpg" width="25" height="25"> Simon.S
+          <a href="#" class="account mx-3 text-sm font-weight-bold" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img class="rounded-circle" src="brand/avatars/default.jpg" width="25" height="25"> Simon.S <i class="fa fa-angle-down"></i>
           </a>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item" href="my-account.html">Mon compte</a>
             <a class="dropdown-item" href="index.html">Deconnexion</a>
           </div>
         </div>
-        <a href="tracking.html" class="shadow-sm rounded-0 btn btn-md btn-danger ml-2 text-sm"><i class="fas fa-search"></i> Entrer votre besoin</a>
+        <a href="tracking.html" class="shadow-sm rounded-0 btn btn-md btn-danger mt-2 ml-2 text-sm"><i class="fas fa-search"></i> Entrer votre besoin</a>
       </form>
     </div>
   </nav>
@@ -71,20 +71,24 @@
       <div class="p-2 mt-5 mb-4">
         <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
           <li class="nav-item">
-            <a class="nav-link active rounded-0" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Mon Profil</a>
+            <a class="nav-link active rounded-0" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="true">Mon Profil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link rounded-0" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Adresse Livraison</a>
+            <a class="nav-link rounded-0" id="pills-delivery-tab" data-toggle="pill" href="#pills-delivery" role="tab" aria-controls="pills-delivery" aria-selected="false">Adresse Livraison</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link rounded-0" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Mon besoin</a>
+            <a class="nav-link rounded-0" id="pills-track-tab" data-toggle="pill" href="#pills-track" role="tab" aria-controls="pills-track" aria-selected="false">Mon besoin</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link rounded-0" id="pills-tracks-tab" data-toggle="pill" href="#pills-tracks" role="tab" aria-controls="pills-tracks" aria-selected="false">Historique</a>
           </li>
         </ul>
 
         <div class="tab-content" id="pills-tabContent">
 
-          <!-- Mon Profil -->
-          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <!-- Profile -->
+          <div class="tab-pane fade show active" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
             <div class="card shadow-sm rounded-0 bg-light">
               <div class="card-body">
                 <!--<h5 class="mb-3">Profil</h5>-->
@@ -185,8 +189,8 @@
             </div>
           </div>
 
-          <!-- Adresse Livraison -->
-          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <!-- Delivery Address -->
+          <div class="tab-pane fade" id="pills-delivery" role="tabpanel" aria-labelledby="pills-delivery-tab">
             <div class="card shadow-sm rounded-0 bg-light">
               <div class="card-body">
 
@@ -267,8 +271,8 @@
             </div>
           </div>
 
-          <!-- Mon Besoin -->
-          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+          <!-- Track  -->
+          <div class="tab-pane fade" id="pills-track" role="tabpanel" aria-labelledby="pills-track-tab">
             <div class="card shadow-sm rounded-0 bg-light">
               <div class="card-body">
                 <!--<h5 class="mb-3">Profil</h5>-->
@@ -318,12 +322,81 @@
               </div>
             </div>
           </div>
+
+          <!-- All Tracks -->
+          <div class="tab-pane fade" id="pills-tracks" role="tabpanel" aria-labelledby="pills-tracks-tab">
+            <div class="card shadow-sm rounded-0 bg-light">
+              <div class="card-body">
+                <!--<h5 class="mb-3">Profil</h5>-->
+
+                <!--Personal Information -->
+                <div class="mt-5">
+                  <h6 class="">Historique</h6><hr>
+
+                  <table class="w-100 table table-responsive">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Produit</th>
+                        <th scope="col">Marque</th>
+                        <th scope="col">Catégorie</th>
+                        <th scope="col">Budget</th>
+                        <th scope="col">Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td></td>
+                        <td class="font-weight-bold">Iphone 6s</td>
+                        <td class="font-weight-bold">Apple</td>
+                        <td class="font-weight-bold">Smartphone</td>
+                        <td class="font-weight-bold">100.000 Fcfa</td>
+                        <td class="font-weight-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td class="font-weight-bold">Iphone 6s</td>
+                        <td class="font-weight-bold">Apple</td>
+                        <td class="font-weight-bold">Smartphone</td>
+                        <td class="font-weight-bold">100.000 Fcfa</td>
+                        <td class="font-weight-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td class="font-weight-bold">Iphone 6s</td>
+                        <td class="font-weight-bold">Apple</td>
+                        <td class="font-weight-bold">Smartphone</td>
+                        <td class="font-weight-bold">100.000 Fcfa</td>
+                        <td class="font-weight-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td class="font-weight-bold">Iphone 6s</td>
+                        <td class="font-weight-bold">Apple</td>
+                        <td class="font-weight-bold">Smartphone</td>
+                        <td class="font-weight-bold">100.000 Fcfa</td>
+                        <td class="font-weight-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td class="font-weight-bold">Iphone 6s</td>
+                        <td class="font-weight-bold">Apple</td>
+                        <td class="font-weight-bold">Smartphone</td>
+                        <td class="font-weight-bold">100.000 Fcfa</td>
+                        <td class="font-weight-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>  
 
-  <footer class="bg-light">
+  <footer class="bg-light footer mt-auto py-2">
     <div class="container text-xs">
       <div class="row">
         <p class="d-none d-sm-block col-md-6 col-sm-6 links mt-3">
