@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+	<title>Order Complete Page</title>
+	<link rel="stylesheet" href="../assets/dist/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/dist/bootstrap-5.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/app.css">
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+	<nav class="mb-4 navbar navbar-expand-lg">
+	  <div class="p-2 container">
+
+	    <h1 class="logo"><a class="navbar-brand" href="../index.html"><span class="text-dark">SKY</span>WALKER</a></h1>
+
+	    <div class="d-none d-sm-block d-sm-none d-md-block" id="navbarsExampleDefault">
+	      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+	        <li class="nav-item">
+	          <a class="nav-link" aria-current="page" href="../index.html">Accueil</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="about.html">A Propos</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="contact.html">Contact</a>
+	        </li>
+
+	        <li class="nav-item">
+	          <a class="nav-link" href="#">
+				<i class="fa fa-2x fa-shopping-cart text-green"></i>
+	          </a>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+
+	<nav class="d-block d-sm-none navbar fixed-bottom navbar-light shadow-lg bg-white">
+	  <div class="menu-mobile container d-flex justify-content-around">
+			<a class="menu-mobile-item text-center navbar-brand" href="about.html">
+				<i class="d-block fa fa-play"></i>
+				<small class="d-block">A Propos</small>
+			</a>
+			<a class="menu-mobile-item text-center navbar-brand" href="../index.html">
+				<i class="d-block fa fa-home"></i>	
+				<small class="d-block">Accueil</small>
+			</a>
+			<a class="menu-mobile-item active text-center navbar-brand" href="#">
+				<i class="d-block fa fa-shopping-cart"></i>	
+				<small class="d-block">Mon Achat</small>
+
+			</a>
+    		<a class="menu-mobile-item text-center navbar-brand" href="contact.html">
+    			<i class="d-block fa fa-phone"></i>	
+    			<small class="d-block">Contact</small>
+    		</a>
+	  	</div>
+	</nav>
+
+	<div class="container">
+		<div class="order-complete card shadow-sm rounded-0">
+			<div class="card-body">
+				<div class="header-card text-center text-green">
+					<h3 class="d-inline">Achat Confirmé</h3>
+					<i class="d-inline fa fa-2x fa-check-circle"></i>
+				</div>
+
+				<div class="info-card">
+					<div class="mb-5 user-info-card">
+						<p>Hey, <strong>Simon</strong></p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+
+					<div class="mb-5 order-info-card border-bottom">
+						<table class="table table-borderless">
+							<thead>
+								<tr class="text-center">
+									<th scope="col">REF</th>
+									<th scope="col">DATE</th>
+									<th scope="col">TOTAL</th>
+									<th scope="col">METHODE PAIEMENT</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="text-center">
+									<td>1473589</td>
+									<td>22 fev 2021</td>
+									<td>59 000 XAF</td>
+									<td>
+										<img src="../assets/images/mobile-money.jpg" width="50">
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="mb-5 order-info-card border-bottom">
+						<table class="table table-borderless">
+							<tbody>
+
+								<tr class="d-flex justify-content-around align-items-center">
+									<td class="d-block d-sm-none">
+										<img src="../assets/images/carousel/1.jpg" width="150px">
+										<p style="font-size: 12px">
+											<h5>Pack Conception Site</h5>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						    				tempor incididunt ut labore et dolore magna aliqua.
+						    				<h6>59 000 XAF</h6>
+										</p>
+									</td>
+									<td class="d-none d-sm-block d-sm-none d-md-block">
+										<img src="../assets/images/carousel/1.jpg" width="150px">
+									</td>
+									<td class="w-50 d-none d-sm-block d-sm-none d-md-block">
+										<h5>Pack Conception Site</h5>
+										<p style="font-size: 12px">
+						    				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						    				tempor incididunt ut labore et dolore magna aliqua.
+						    			</p>
+									</td>
+									<td class="d-none d-sm-block d-sm-none d-md-block">
+										<h6>59 000 XAF</h6>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="order-resume-payment">
+						<table class="table">
+							<tr>
+								<th scope="col">SOUS-TOTAL</th>
+								<td class="text-end">59 000 XAF</td>
+							</tr>
+							<tr>
+								<th scope="col">LIVRAISON</th>
+								<td class="text-end">0 XAF</td>
+							</tr>
+							<tr>
+								<th scope="col">TOTAL</th>
+								<td class="text-end">59 000 XAF</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="mt-5">
+		<div class="row">
+			<div class="col-sm footer-1">
+				<h1 class="logo"><a class="navbar-brand" href="#"><span class="text-light">SKY</span>WALKER</a></h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+				<p class="sci">
+					<i class="fa fa-facebook"></i>
+					<i class="fa fa-twitter mx-3"></i>
+					<i class="fa fa-instagram ml-3"></i>
+				</p>
+			</div>
+			<div class="col-sm footer-2">
+				<h5>Pages</h5>
+				<p>
+					<a href="#">Accueil</a>
+					<a href="#">A Propos</a>
+					<a href="#">Contact</a>
+				</p>
+			</div>
+			<div class="col-sm footer-3">
+				<h5>Informations contact</h5>
+				<p>
+					<span>email@skywalker.com</span>
+					<span>6 99 99 99 99 / 6 77 77 77 77</span>
+					<span>Bonamoussadi, Dla - Cameroun</span>
+				</p>
+			</div>
+			<div class="col-sm footer-4">
+				<h5>Newletter</h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor</p>
+				<div class="input-group">
+					<input type="text" class="form-control rounded-0" name="">
+					<button class="btn btn-green rounded-0"><i class="fa fa-envelope"></i></button>
+				</div>
+			</div>
+		</div>
+
+		<p class="row mt-2 mb-0">
+			<small class="text-center">Copyright 2021 <span class="text-green">SKyWalKer</span>. Tout droit réservés.</small>
+		</p>	
+	</footer>
+</body>
+</html>
