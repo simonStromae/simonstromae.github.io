@@ -219,7 +219,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 3px;
   position: relative;
 }
-#fh5co-header .navbar-brand:after, #fh5co-header .navbar-brand:before {
+/*#fh5co-header .navbar-brand:after, #fh5co-header .navbar-brand:before {
   content: "";
   position: absolute;
   display: block;
@@ -237,7 +237,7 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-header .navbar-brand:before {
   left: 0px;
   background: rgba(250, 85, 85, 0.8);
-}
+}*/
 #fh5co-header .navbar-brand > span {
   color: #FA5555;
 }
@@ -759,7 +759,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #fh5co-pricing .price-box {
   border: 2px solid #ECEEF0;
-  text-align: center;
+  text-align: ;
   padding: 30px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -805,11 +805,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 #fh5co-pricing .price {
-  font-size: 50px;
+  font-size: 40px;
+  margin: 15px 0;
+  padding: 15px 0;
   color: #000;
 }
 #fh5co-pricing .price .currency {
   font-size: 20px;
+  margin: 0 5px;
   top: -1.2em;
 }
 #fh5co-pricing .price small {
@@ -820,10 +823,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 30px 0;
 }
 #fh5co-pricing .pricing-info li {
-  padding: 0;
+  padding: 5px 0;
   margin: 0;
   list-style: none;
-  text-align: center;
+  text-align: left;
 }
 
 .fh5co-services {
@@ -1510,4 +1513,12 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid #00ADB5;
 }
 
-/*# sourceMappingURL=style.css.map */
+@media screen and (max-width: 380px) {
+  .navbar .navbar-header .navbar-brand {
+    margin-bottom: 15px;
+  }
+
+  .navbar .navbar-header .navbar-brand img{
+    width: 100px;
+  }
+}
